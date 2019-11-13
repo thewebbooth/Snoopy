@@ -932,7 +932,7 @@ class Snoopy
         $postdata = '';
 
         if (count($formvars) == 0 && count($formfiles) == 0)
-            return;
+            return '';
 
         switch ($this->_submit_type) {
             case "application/x-www-form-urlencoded":
