@@ -882,8 +882,7 @@ class Snoopy
                 $port,
                 $errno,
                 $errstr,
-                $this->_fp_timeout,
-                $context);
+                $this->_fp_timeout);
         }
 
         if ($fp) {
