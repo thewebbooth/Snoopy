@@ -624,7 +624,7 @@ class Snoopy
     {
         $cookie_headers = '';
         if ($this->passcookies && $this->_redirectaddr)
-            $this->setcookies();
+            $this->_setcookies();
 
         $URI_PARTS = parse_url($URI);
         if (empty($url))
@@ -786,11 +786,11 @@ class Snoopy
     }
 
     /*======================================================================*\
-        Function:	setcookies()
+        Function:	_setcookies()
         Purpose:	set cookies for a redirection
     \*======================================================================*/
 
-    public function setcookies()
+    private function _setcookies()
     {
         for ($x = 0; $x < count($this->headers); $x++) {
             if (preg_match('/^set-cookie:[\s]+([^=]+)=([^;]+)/i', $this->headers[$x], $match))
