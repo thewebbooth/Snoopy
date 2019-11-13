@@ -1,0 +1,35 @@
+{
+    "name": "purcaholic/snoopy",
+    "type": "php-net-client",
+    "description": "Snoopy - the PHP net client",
+    "keywords": [
+        "php",
+        "net",
+        "client",
+        "snoopy"
+    ],
+    "homepage": "https://sourceforge.net/projects/snoopy/",
+    "authors": [
+        {
+            "name": "Monte Ohrt",
+            "email": "monte@ohrt.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Andrei Zmievski",
+            "email": "andrei@php.net",
+            "role": "Developer"
+        },
+        {
+            "name": "Gene Wood",
+            "email": "gene_wood@users.sourceforge.net",
+            "role": "Developer"
+        },
+        {
+            "name": "Thomas Hoger",
+            "email": "thoger@redhat.com",
+            "role": "Developer"
+        }
+    ],
+    "license": ["GPL-2.0-or-later"]
+}
