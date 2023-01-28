@@ -188,12 +188,10 @@ class Snoopy
                     return false;
                 }
                 return $this;
-                break;
             default:
                 // not a valid protocol
                 $this->error = 'Invalid protocol "' . $URI_PARTS["scheme"] . '"\n';
                 return false;
-                break;
         }
         return $this;
     }
@@ -286,12 +284,10 @@ class Snoopy
                     return false;
                 }
                 return $this;
-                break;
             default:
                 // not a valid protocol
                 $this->error = 'Invalid protocol "' . $URI_PARTS["scheme"] . '"\n';
                 return false;
-                break;
         }
         return $this;
     }
@@ -860,7 +856,7 @@ class Snoopy
                 if (isset($this->capath))
                     $context_opts['ssl']['capath'] = $this->capath;
             }
-                    
+
             $host = 'ssl://' . $host;
         }
 
