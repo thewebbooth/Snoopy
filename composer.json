@@ -1,5 +1,5 @@
 {
-    "name": "purcaholic/snoopy",
+    "name": "purc/snoopy",
     "type": "php-net-client",
     "description": "Snoopy - the PHP net client",
     "keywords": [
