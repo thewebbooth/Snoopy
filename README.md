@@ -1,37 +1,28 @@
 # NAME:
 
-Snoopy - the PHP net client v2.0.0 (adapted to PHP 7.2)
+Snoopy - the PHP net client v2.0.0 (adapted to PHP 8.2)
 
 ## SYNOPSIS:
 
 ```php
 $snoopy = new \Purc\Snoopy\Snoopy();
 
-$snoopy->fetchtext("https://www.php.net/");
-print $snoopy->results;
+$snoopy->fetchtext('https://www.google.com/');
+echo 'fetchtext: ' . print_r($snoopy->results, true);
 
-$snoopy->fetchlinks("https://www.phpbuilder.com/");
-print_r($snoopy->results);
+$snoopy->fetchlinks('https://www.phpbuilder.com/');
+echo 'fetchlinks: ' . print_r($snoopy->results, true);
 
-$submit_url = "https://lnk.ispi.net/texis/scripts/msearch/netsearch.html";
+$url = 'https://www.php.net/search.php';
+$vars = [
+    'show' => 'quickref',
+    'pattern' => 'PHP',
+];
+$snoopy->submit($url, $vars);
+echo 'submit: ' . print_r($snoopy->results, true);
 
-$submit_vars["q"] = "amiga";
-$submit_vars["submit"] = "Search!";
-$submit_vars["searchhost"] = "Altavista";
-
-$snoopy->submit($submit_url, $submit_vars);
-print $snoopy->results;
-
-$snoopy->maxframes = 5;
-$snoopy->fetch("https://www.ispi.net/");
-echo "<pre>\n";
-echo htmlentities($snoopy->results[0]);
-echo htmlentities($snoopy->results[1]);
-echo htmlentities($snoopy->results[2]);
-echo "</pre>\n";
-
-$snoopy->fetchform("https://www.altavista.com");
-print $snoopy->results;
+$snoopy->fetchform('https://www.altavista.com');
+echo 'fetchform: ' . print_r($snoopy->results, true);
 ```
 
 ## DESCRIPTION:
