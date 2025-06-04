@@ -1,5 +1,5 @@
 {
-    "name": "purc/snoopy",
+    "name": "snoopy/snoopy",
     "type": "php-net-client",
     "description": "Snoopy - the PHP net client",
     "keywords": [
@@ -36,7 +36,7 @@
         "ext-zlib": "*"
     },
     "autoload": {
-        "psr-4": {
-            "Purc\\Snoopy\\": "src/"
+        "psr-0": {
+            "Snoopy": "src/"
         }
     }}
