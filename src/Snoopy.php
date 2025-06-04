@@ -1,6 +1,6 @@
 <?php
 
-namespace Purc\Snoopy;
+namespace Snoopy;
 
 /*************************************************
  *
