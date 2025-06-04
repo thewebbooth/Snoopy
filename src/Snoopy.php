@@ -1,6 +1,6 @@
 <?php
 
-namespace Snoopy\Snoopy;
+namespace Snoopy;
 
 /*************************************************
  *
