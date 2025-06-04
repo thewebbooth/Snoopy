@@ -36,7 +36,7 @@
         "ext-zlib": "*"
     },
     "autoload": {
-        "psr-0": {
-            "Snoopy": "src/"
+        "psr-4": {
+            "Snoopy\\": "src/"
         }
     }}
